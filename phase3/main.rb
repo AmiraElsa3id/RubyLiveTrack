@@ -3,6 +3,8 @@ require_relative 'event_router'
 require_relative 'console_handler'
 require_relative 'file_handler'
 require_relative 'stats_handler'
+require_relative 'html_handler'
+require_relative 'sqlite_handler'
 
 MENU = {
   1 => :WORK,
@@ -15,6 +17,8 @@ router = EventRouter.new
 router.register(ConsoleHandler.new)
 router.register(FileHandler.new)
 router.register(StatsHandler.new)
+router.register(HtmlHandler.new)
+router.register(SqliteHandler.new)
 
 puts "=== LifeTrack ==="
 

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LifeTrack Dashboard</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: 40px auto; background: #f9f9f9; color: #222; }
+    h1 { color: #333; }
+    table { width: 100%; border-collapse: collapse; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+    th { background: #333; color: #fff; padding: 10px 14px; text-align: left; }
+    td { padding: 9px 14px; border-bottom: 1px solid #eee; }
+    tr:last-child td { border-bottom: none; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: .8em; font-weight: bold; color: #fff; }
+    .work     { background: #4f86c6; }
+    .study    { background: #6abf69; }
+    .exercise { background: #f0883e; }
+    .meal     { background: #9c6ade; }
+    .summary  { margin-top: 24px; display: flex; gap: 16px; }
+    .card     { flex: 1; background: #fff; border-radius: 8px; padding: 16px; box-shadow: 0 1px 4px rgba(0,0,0,.1); text-align: center; }
+    .card h3  { margin: 0 0 6px; font-size: .9em; color: #666; text-transform: uppercase; letter-spacing: .05em; }
+    .card p   { margin: 0; font-size: 1.8em; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>LifeTrack Dashboard</h1>
+  <p>Last updated: 2026-06-11 21:46:07</p>
+
+  <div class="summary">
+    <div class="card">
+  <h3>Work</h3>
+  <p class="work">30 <small style="font-size:.5em">min</small></p>
+</div>
+<div class="card">
+  <h3>Study</h3>
+  <p class="study">0 <small style="font-size:.5em">min</small></p>
+</div>
+<div class="card">
+  <h3>Exercise</h3>
+  <p class="exercise">2 <small style="font-size:.5em">min</small></p>
+</div>
+<div class="card">
+  <h3>Meals</h3>
+  <p class="meal">1 <small style="font-size:.5em">logged</small></p>
+</div>
+
+  </div>
+
+  <br>
+  <table>
+    <thead>
+      <tr><th>Time</th><th>Type</th><th>Description</th><th>Duration</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+  <td>2026-06-11 21:44</td>
+  <td><span class="badge exercise">EXERCISE</span></td>
+  <td>30</td>
+  <td>2 min</td>
+</tr>
+<tr>
+  <td>2026-06-11 21:45</td>
+  <td><span class="badge meal">MEAL</span></td>
+  <td>20</td>
+  <td>22 min</td>
+</tr>
+<tr>
+  <td>2026-06-11 21:46</td>
+  <td><span class="badge work">WORK</span></td>
+  <td>ddd</td>
+  <td>30 min</td>
+</tr>
+
+    </tbody>
+  </table>
+</body>
+</html>
